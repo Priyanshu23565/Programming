@@ -1,0 +1,63 @@
+String Method 
+
+
+----------------------->>
+
+public class StringDemo {
+    public static void main(String[] args) {
+        String s = "Banana";
+
+        // length()
+        System.out.println("Length: " + s.length());  // Output: 6
+
+        // charAt(index)
+        System.out.println("Char at index 3: " + s.charAt(3));  // Output: a
+
+        // concat(str)
+        String s2 = s.concat(" Split");
+        System.out.println("After concat: " + s2);  // Output: Banana Split
+
+        // equals(str)
+        System.out.println("Equals 'banana'? " + s.equals("banana"));  // Output: false
+
+        // equalsIgnoreCase(str)
+        System.out.println("EqualsIgnoreCase 'banana'? " + s.equalsIgnoreCase("banana"));  // Output: true
+
+        // toUpperCase()
+        System.out.println("Uppercase: " + s.toUpperCase());  // Output: BANANA
+
+        // contains("nan")
+        System.out.println("Contains 'nan'? " + s.contains("nan"));  // Output: true
+
+        // substring(start, end)
+        System.out.println("Substring(2,5): " + s.substring(2, 5));  // Output: nan
+
+        // replace('a','o')
+        System.out.println("Replace a with o: " + s.replace('a', 'o'));  // Output: Bonono
+
+        // isEmpty()
+        System.out.println("Is empty? " + s.isEmpty());  // Output: false
+
+        // startsWith("B")
+        System.out.println("Starts with B? " + s.startsWith("B"));  // Output: true
+
+        // endsWith("a")
+        System.out.println("Ends with a? " + s.endsWith("a"));  // Output: true
+
+        // indexOf('n')
+        System.out.println("Index of n: " + s.indexOf('n'));  // Output: 2
+
+        // lastIndexOf('n')
+        System.out.println("Last index of n: " + s.lastIndexOf('n'));  // Output: 4
+
+        // split(" ")
+        String[] parts = "I love Java".split(" ");
+        System.out.println("Split string:");
+        for(String part : parts) {
+            System.out.println(part);
+        }
+        // Output: I
+        //         love
+        //         Java
+    }
+}
