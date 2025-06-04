@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="submit_registration.php" method="post">
+    
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male"> Male<br>
+    <input type="radio" id="female" name="gender" value="female"> Female<br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="city">City:</label><br>
+    <select id="city" name="city">
+        <option value="">--Select City--</option>
+        <option value="delhi">Delhi</option>
+        <option value="noida">Noida</option>
+        <option value="gurugram">Gurugram</option>
+        <option value="meerut">Meerut</option>
+    </select><br><br>
+
+    <label for="hobby">Hobbies:</label><br>
+    <input type="checkbox" name="hobby1" value="Reading"> Reading<br>
+    <input type="checkbox" name="hobby2" value="Traveling"> Traveling<br>
+    <input type="checkbox" name="hobby3" value="Music"> Music<br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

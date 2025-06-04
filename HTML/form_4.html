@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full School Registration Form</title>
+</head>
+<body>
+    <h1>School Registration Form</h1>
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <label for="nationality">Nationality:</label><br>
+            <input type="text" id="nationality" name="nationality" required><br><br>
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="address">Full Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State:</label><br>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="pincode">Pincode:</label><br>
+            <input type="text" id="pincode" name="pincode" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="grade">Grade Applying For:</label><br>
+            <select id="grade" name="grade" required>
+                <option value="">--Select--</option>
+                <option value="Nursery">Nursery</option>
+                <option value="KG">KG</option>
+                <option value="1">1st Grade</option>
+                <option value="2">2nd Grade</option>
+                <option value="3">3rd Grade</option>
+                <option value="4">4th Grade</option>
+                <option value="5">5th Grade</option>
+                <option value="6">6th Grade</option>
+                <option value="7">7th Grade</option>
+                <option value="8">8th Grade</option>
+                <option value="9">9th Grade</option>
+                <option value="10">10th Grade</option>
+            </select><br><br>
+
+            <label for="prev_school">Previous School Name:</label><br>
+            <input type="text" id="prev_school" name="prev_school"><br><br>
+
+            <label for="marks">Last Exam Marks (%):</label><br>
+            <input type="number" id="marks" name="marks" min="0" max="100"><br><br>
+        </fieldset>
+
+        <!-- Parent/Guardian Information -->
+        <fieldset>
+            <legend>Parent / Guardian Information</legend>
+
+            <label for="parent_name">Full Name:</label><br>
+            <input type="text" id="parent_name" name="parent_name" required><br><br>
+
+            <label for="relation">Relation to Student:</label><br>
+            <input type="text" id="relation" name="relation" required><br><br>
+
+            <label for="occupation">Occupation:</label><br>
+            <input type="text" id="occupation" name="occupation"><br><br>
+
+            <label for="parent_contact">Contact Number:</label><br>
+            <input type="tel" id="parent_contact" name="parent_contact" required><br><br>
+        </fieldset>
+
+        <!-- Document Upload -->
+        <fieldset>
+            <legend>Documents Upload</legend>
+
+            <label for="photo">Upload Student Photo:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+            <label for="birth_cert">Upload Birth Certificate:</label><br>
+            <input type="file" id="birth_cert" name="birth_cert" accept=".pdf,.jpg,.png" required><br><br>
+
+            <label for="report_card">Upload Last Report Card:</label><br>
+            <input type="file" id="report_card" name="report_card" accept=".pdf,.jpg,.png"><br><br>
+        </fieldset>
+
+        <!-- Declaration -->
+        <fieldset>
+            <legend>Declaration</legend>
+
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I hereby declare that the information provided above is true and correct.</label><br><br>
+        </fieldset>
+
+        <!-- Submit and Reset -->
+        <input type="submit" value="Submit Registration">
+        <input type="reset" value="Reset Form">
+    </form>
+
+</body>
+</html>
