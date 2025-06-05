@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Big Education Center Registration Form</title>
+</head>
+<body>
+
+   <marquee behavior="up" direction="right" style="color: darkblue; font-size: 18px;">
+    🎓 Welcome to Tech Warrior | 📚 New Batches Starting Soon | ⏰ Limited Seats Available | 📲 WhatsApp us now!
+</marquee>
+
+
+<marquee direction="up" height="100px" scrollamount="5">
+    🔔 Admission Open<br>
+    🎯 Java, Python, Web Development<br>
+    📆 New Batches Start Every Week<br>
+    📞 Call: 9876543210
+</marquee>
+
+
+
+<div style="width: 100%; background-color: #fb0000; border: 2px dashed #4CAF50; padding: 10px;">
+    <marquee direction="up" height="100px" scrollamount="2">
+        🔔 Admission Open<br>
+        🎯 Java, Python, Web Development<br>
+        📆 New Batches Start Every Week<br>
+        📞 Call: 9876543210
+    </marquee>
+</div>
+
+<marquee direction="up" height="100px" scrollamount="2">
+    🏆 ISO Certified Institute<br>
+    🎓 1000+ Students Trained<br>
+    🧾 Government-Approved Courses<br>
+    ✅ Certificates Provided After Completion
+</marquee>
+
+<hr>
+<div style="display: flex; gap: 10px;">
+    <div style="width: 30%; border: 2px solid #009688; background: #e0f7fa;">
+        <marquee direction="up" height="150px" scrollamount="2">
+            🔔 Latest Update 1<br>
+            🎯 Update 2<br>
+            📆 Update 3<br>
+        </marquee>
+    </div>
+    <div style="width: 70%;">
+        <h3>📝 Register Now for New Batches!</h3>
+        <p>No Admission Fee | Free Demo | Expert Mentors</p>
+    </div>
+</div>
+
+
+
+
+    <h2>📋 Student Registration Form - Tech Warrior Institute</h2>
+
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+
+        <!-- Student Name -->
+        <label for="name">👤 Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Father's Name -->
+        <label for="fname">👨‍👧 Father's Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <!-- Mother's Name -->
+        <label for="mname">👩‍👧 Mother's Name:</label><br>
+        <input type="text" id="mname" name="mname"><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">🎂 Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Gender -->
+        <label>⚧ Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <!-- Contact Details -->
+        <label for="email">📧 Email ID:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">📱 Mobile Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Address -->
+        <label for="address">🏠 Permanent Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Course Selection -->
+        <label for="course">📚 Course Applied For:</label><br>
+        <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option>Java Programming</option>
+            <option>Python Programming</option>
+            <option>Full Stack Development</option>
+            <option>Web Designing</option>
+            <option>Digital Marketing</option>
+            <option>C/C++ Foundation</option>
+        </select><br><br>
+
+        <!-- Batch Time -->
+        <label for="batch">⏰ Preferred Batch Timing:</label><br>
+        <select id="batch" name="batch" required>
+            <option value="">--Select Batch--</option>
+            <option>8 AM - 10 AM</option>
+            <option>10 AM - 12 PM</option>
+            <option>2 PM - 4 PM</option>
+            <option>4 PM - 6 PM</option>
+            <option>Weekend (Sat-Sun)</option>
+        </select><br><br>
+
+        <!-- Educational Qualification -->
+        <label for="qualification">🎓 Highest Qualification:</label><br>
+        <input type="text" id="qualification" name="qualification" required><br><br>
+
+        <!-- Upload Photo -->
+        <label for="photo">📸 Upload Your Passport Size Photo:</label><br>
+        <input type="file" id="photo" name="photo" required><br><br>
+
+        <!-- Upload ID Proof -->
+        <label for="idproof">🪪 Upload ID Proof (Aadhar/PAN/etc):</label><br>
+        <input type="file" id="idproof" name="idproof" required><br><br>
+
+        <!-- Declaration -->
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">I hereby declare that all the information provided is true to the best of my knowledge.</label><br><br>
+
+        <!-- Submit & Reset -->
+        <input type="submit" value="✅ Submit Registration">
+        <input type="reset" value="❌ Clear All">
+
+    </form>
+
+</body>
+</html>

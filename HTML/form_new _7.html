@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Big Education Center Registration Form</title>
+</head>
+<body>
+
+<!-- Header Marquee -->
+<marquee behavior="scroll" direction="left" style="color: darkblue; font-size: 18px;">
+    🎓 Welcome to Tech Warrior | 📚 New Batches Starting Soon | ⏰ Limited Seats Available | 📲 WhatsApp us now!
+</marquee>
+
+<!-- Notification Section -->
+<div style="width: 100%; background-color: #fb0000; border: 2px dashed #4CAF50; padding: 10px;">
+    <marquee direction="up" height="100px" scrollamount="2">
+        🔔 Admission Open<br>
+        🎯 Java, Python, Web Development<br>
+        📆 New Batches Start Every Week<br>
+        🧾 Govt. Approved Certificate<br>
+        📞 Call: 9876543210
+    </marquee>
+</div>
+
+<!-- Updates Box -->
+<marquee direction="up" height="100px" scrollamount="2">
+    🏆 ISO Certified Institute<br>
+    🎓 1000+ Students Trained<br>
+    📜 Career-Oriented Courses<br>
+    ✅ Certificates After Completion
+</marquee>
+
+<hr>
+
+<!-- Highlighted Info with Flex -->
+<div style="display: flex; gap: 10px;">
+    <div style="width: 30%; border: 2px solid #009688; background: #e0f7fa;">
+        <marquee direction="up" height="150px" scrollamount="2">
+            🔔 Latest Update 1<br>
+            🎯 Update 2<br>
+            📆 Update 3<br>
+            💡 Free Seminar This Sunday!
+        </marquee>
+    </div>
+    <div style="width: 70%;">
+        <h3>📝 Register Now for New Batches!</h3>
+        <p>No Admission Fee | Free Demo | Expert Mentors | 100% Practical</p>
+    </div>
+</div>
+
+<!-- Form Title -->
+<h2>📋 Student Registration Form - Tech Warrior Institute</h2>
+
+<!-- Progress Bar (Just a Creative Visual) -->
+<b>🧾 Form Completion Progress:</b><br>
+<progress value="75" max="100"></progress><br><br>
+
+<!-- Registration Form -->
+<form action="submit.php" method="post" enctype="multipart/form-data">
+
+    <!-- Basic Info -->
+    <label for="name">👤 Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="fname">👨‍👧 Father's Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
+
+    <label for="mname">👩‍👧 Mother's Name:</label><br>
+    <input type="text" id="mname" name="mname"><br><br>
+
+    <label for="dob">🎂 Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label>⚧ Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+
+    <!-- Contact -->
+    <label for="email">📧 Email ID:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">📱 Mobile Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="emergency">📞 Emergency Contact:</label><br>
+    <input type="tel" id="emergency" name="emergency"><br><br>
+
+    <label for="address">🏠 Permanent Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+    <!-- Course Info -->
+    <label for="course">📚 Course Applied For:</label><br>
+    <select id="course" name="course" required>
+        <option value="">--Select Course--</option>
+        <option>Java Programming</option>
+        <option>Python Programming</option>
+        <option>Full Stack Development</option>
+        <option>Web Designing</option>
+        <option>Digital Marketing</option>
+        <option>C/C++ Foundation</option>
+    </select><br><br>
+
+    <label for="batch">⏰ Preferred Batch Timing:</label><br>
+    <select id="batch" name="batch" required>
+        <option value="">--Select Batch--</option>
+        <option>8 AM - 10 AM</option>
+        <option>10 AM - 12 PM</option>
+        <option>2 PM - 4 PM</option>
+        <option>4 PM - 6 PM</option>
+        <option>Weekend (Sat-Sun)</option>
+    </select><br><br>
+
+    <label>🖥️ Mode of Training:</label><br>
+    <input type="radio" name="mode" value="Online" required> Online
+    <input type="radio" name="mode" value="Offline"> Offline<br><br>
+
+    <label for="qualification">🎓 Highest Qualification:</label><br>
+    <input type="text" id="qualification" name="qualification" required><br><br>
+
+    <!-- Upload -->
+    <label for="photo">📸 Upload Passport Size Photo:</label><br>
+    <input type="file" id="photo" name="photo" required><br><br>
+
+    <label for="idproof">🪪 Upload ID Proof (Aadhar/PAN/etc):</label><br>
+    <input type="file" id="idproof" name="idproof" required><br><br>
+
+    <!-- Feedback & Extras -->
+    <label>🌟 How did you hear about us?</label><br>
+    <input type="radio" name="ref" value="Friend"> 👥 Friend
+    <input type="radio" name="ref" value="Internet"> 🌐 Internet
+    <input type="radio" name="ref" value="Ad"> 📺 Advertisement<br><br>
+
+    <label>⭐ Your Rating for Our Institute:</label><br>
+    <input type="radio" name="rate" value="1"> 🌟
+    <input type="radio" name="rate" value="2"> 🌟🌟
+    <input type="radio" name="rate" value="3"> 🌟🌟🌟
+    <input type="radio" name="rate" value="4"> 🌟🌟🌟🌟
+    <input type="radio" name="rate" value="5"> 🌟🌟🌟🌟🌟<br><br>
+
+    <label for="suggestion">💬 Any Suggestions or Message:</label><br>
+    <textarea id="suggestion" name="suggestion" rows="3" cols="50" placeholder="Everything looks great 👍"></textarea><br><br>
+
+    <!-- Declaration -->
+    <input type="checkbox" id="declaration" name="declaration" required>
+    <label for="declaration">I hereby declare that all the information provided is true to the best of my knowledge.</label><br><br>
+
+    <!-- Submit & Reset -->
+    <input type="submit" value="✅ Submit Registration">
+    <input type="reset" value="❌ Clear All">
+
+</form>
+
+<!-- Footer Info -->
+<hr>
+<fieldset>
+  <legend>📍 Institute Location</legend>
+  Tech Warrior Institute<br>
+  2nd Floor, Near Bus Stand, Aligarh<br>
+  Website: www.techwarrior.in | Email: info@techwarrior.in
+</fieldset>
+
+
+</body>
+</html>
