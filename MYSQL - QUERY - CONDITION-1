@@ -1,0 +1,145 @@
+# Full Notes: Conditions + SELECT + CASE in MySQL
+
+--------------------------------------------->
+
+### Step 1: Table Create karo — employees
+
+```sql
+CREATE TABLE employees (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  department VARCHAR(50),
+  salary INT,
+  city VARCHAR(50)
+);
+```
+
+---
+
+### Step 2: Data Insert karo
+
+```sql
+INSERT INTO employees (id, name, department, salary, city) VALUES
+(1, 'Rahul', 'IT', 60000, 'Delhi'),
+(2, 'Priya', 'HR', 45000, 'Mumbai'),
+(3, 'Aman', 'Finance', 72000, 'Delhi'),
+(4, 'Neha', 'IT', 50000, 'Pune'),
+(5, 'Ravi', 'HR', 30000, 'Chennai');
+```
+
+---
+
+### Step 3: Basic SELECT + WHERE + AND + OR Conditions
+
+---
+
+**Example 1: WHERE with AND**
+
+```sql
+SELECT name, department, salary, city
+FROM employees
+WHERE department = 'IT' AND city = 'Delhi';
+```
+
+**Output:**
+
+| name  | department | salary | city  |
+| ----- | ---------- | ------ | ----- |
+| Rahul | IT         | 60000  | Delhi |
+
+---
+
+**Example 2: WHERE with OR**
+
+```sql
+SELECT name, department, salary, city
+FROM employees
+WHERE city = 'Mumbai' OR city = 'Pune';
+```
+
+**Output:**
+
+| name  | department | salary | city   |
+| ----- | ---------- | ------ | ------ |
+| Priya | HR         | 45000  | Mumbai |
+| Neha  | IT         | 50000  | Pune   |
+
+---
+
+**Example 3: Complex WHERE with AND + OR**
+
+```sql
+SELECT name, department, salary, city
+FROM employees
+WHERE (department = 'HR' AND salary > 40000) OR city = 'Pune';
+```
+
+**Output:**
+
+| name  | department | salary | city   |
+| ----- | ---------- | ------ | ------ |
+| Priya | HR         | 45000  | Mumbai |
+| Neha  | IT         | 50000  | Pune   |
+
+---
+
+### Step 4: SELECT + CASE — Salary Status
+
+```sql
+SELECT name, salary,
+  CASE
+    WHEN salary >= 70000 THEN 'High Salary'
+    WHEN salary >= 50000 THEN 'Medium Salary'
+    ELSE 'Low Salary'
+  END AS salary_status
+FROM employees;
+```
+
+**Output:**
+
+| name  | salary | salary\_status |
+| ----- | ------ | -------------- |
+| Rahul | 60000  | Medium Salary  |
+| Priya | 45000  | Low Salary     |
+| Aman  | 72000  | High Salary    |
+| Neha  | 50000  | Medium Salary  |
+| Ravi  | 30000  | Low Salary     |
+
+---
+
+### Step 5: SELECT + CASE + WHERE + AND + OR Together
+
+**Example: Salary status for only IT or HR employees living in Delhi or Mumbai**
+
+```sql
+SELECT name, department, city, salary,
+  CASE
+    WHEN salary >= 70000 THEN 'High Salary'
+    WHEN salary >= 50000 THEN 'Medium Salary'
+    ELSE 'Low Salary'
+  END AS salary_status
+FROM employees
+WHERE (department = 'IT' OR department = 'HR')
+  AND (city = 'Delhi' OR city = 'Mumbai');
+```
+
+**Output:**
+
+| name  | department | city   | salary | salary\_status |
+| ----- | ---------- | ------ | ------ | -------------- |
+| Rahul | IT         | Delhi  | 60000  | Medium Salary  |
+| Priya | HR         | Mumbai | 45000  | Low Salary     |
+
+---
+
+### Summary Table: SQL Conditions + CASE
+
+| Clause | Use Case                                | Example                                           |
+| ------ | --------------------------------------- | ------------------------------------------------- |
+| WHERE  | Filter rows based on condition          | WHERE salary > 50000                              |
+| AND    | Multiple conditions true simultaneously | WHERE city='Delhi' AND department='IT'            |
+| OR     | Either condition true                   | WHERE city='Mumbai' OR city='Pune'                |
+| CASE   | Create conditional columns              | CASE WHEN salary>70000 THEN 'High' ELSE 'Low' END |
+
+---
+
