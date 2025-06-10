@@ -1,4 +1,40 @@
 # Full Notes: Conditions + SELECT + CASE in MySQL
+ALL CHAPTER NAME MYSQL :
+----------------------------
+| S.No   | Chapter Name                    | Status               | Recommended Level     |
+| ------ | ------------------------------- | -------------------- | --------------------- |
+| 1️⃣    | Introduction to MySQL           | ❌                    | Beginner              |
+| 2️⃣    | Data Types in MySQL             | ❌                    | Beginner              |
+| 3️⃣    | CREATE, INSERT, SELECT          | ✅ (done before CASE) | Beginner              |
+| 4️⃣    | WHERE Clause                    | ✅ (done before CASE) | Beginner              |
+| 5️⃣    | ORDER BY / LIMIT                | ✅ (done before CASE) | Beginner              |
+| 6️⃣    | DISTINCT                        | ✅ (done before CASE) | Beginner              |
+| 7️⃣    | AND / OR / NOT                  | ✅ (done before CASE) | Beginner              |
+| 8️⃣    | LIKE / IN / BETWEEN             | ✅ (done before CASE) | Beginner              |
+| 9️⃣    | IS NULL / IS NOT NULL           | ✅ (done before CASE) | Beginner              |
+| 🔟     | CASE Statement                  | ✅                    | Beginner-Intermediate |
+| 1️⃣1️⃣ | Aggregate Functions             | ✅                    | Intermediate          |
+| 1️⃣2️⃣ | GROUP BY / HAVING               | ❌                    | Intermediate          |
+| 1️⃣3️⃣ | JOINS (INNER, LEFT, RIGHT etc.) | ✅                    | Intermediate          |
+| 1️⃣4️⃣ | String Functions                | ✅                    | Intermediate          |
+| 1️⃣5️⃣ | Date Functions                  | ❌                    | Intermediate          |
+| 1️⃣6️⃣ | Mathematical Functions          | ❌                    | Intermediate          |
+| 1️⃣7️⃣ | Subqueries                      | ❌                    | Intermediate-Advanced |
+| 1️⃣8️⃣ | Aliases                         | ❌                    | Intermediate          |
+| 1️⃣9️⃣ | Views                           | ❌                    | Advanced              |
+| 2️⃣0️⃣ | Indexes                         | ❌                    | Advanced              |
+| 2️⃣1️⃣ | Constraints (PK, FK etc.)       | ❌                    | Intermediate          |
+| 2️⃣2️⃣ | Triggers                        | ❌                    | Advanced              |
+| 2️⃣3️⃣ | Stored Procedures               | ❌                    | Advanced              |
+| 2️⃣4️⃣ | Transactions                    | ❌                    | Advanced              |
+| 2️⃣5️⃣ | User Management (GRANT, REVOKE) | ❌                    | Advanced              |
+
+
+
+
+
+
+----------------------------
 
 --------------------------------------------->
 
