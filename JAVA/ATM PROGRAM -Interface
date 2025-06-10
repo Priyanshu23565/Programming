@@ -1,0 +1,39 @@
+// ✅ Abstract class - defines template
+abstract class ATM {
+    abstract void checkBalance();
+    abstract void withdrawMoney(double amount);
+
+    // Non-abstract method
+    void insertCard() {
+        System.out.println("Card Inserted.");
+    }
+}
+
+// ✅ Child class - real logic implemented
+class SBIATM extends ATM {
+    double balance = 10000;
+
+    void checkBalance() {
+        System.out.println("Available Balance: ₹" + balance);
+    }
+
+    void withdrawMoney(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("₹" + amount + " withdrawn successfully.");
+        } else {
+            System.out.println("Insufficient Balance!");
+        }
+    }
+}
+
+// ✅ Main code - user side
+public class Main {
+    public static void main(String[] args) {
+        ATM myAtm = new SBIATM();  // 🧠 abstraction in action
+        myAtm.insertCard();
+        myAtm.checkBalance();
+        myAtm.withdrawMoney(4000);
+        myAtm.checkBalance();
+    }
+}
