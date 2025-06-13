@@ -1,0 +1,32 @@
+# 🎓 Marksheet Management System (MySQL Project)
+
+This is a simple **Marksheet Management System** project using **MySQL**.
+
+It stores students' subject-wise marks, calculates **Total**, **Percentage**, and **Grade** — everything in a clean and easy format.
+
+---
+
+## 📦 Features
+
+- Store subject-wise marks
+- Calculate total & percentage
+- Grade system (A+, A, B, C, Fail)
+- 100 Marks per subject
+- Easy to modify and scale
+
+---
+
+## 🛠️ Technologies Used
+
+- MySQL (Structured Query Language)
+- GitHub for project management
+
+---
+
+## 🧱 Database Structure
+
+### 🔹 Database Name
+
+```sql
+CREATE DATABASE simple_marksheet;
+USE simple_marksheet;
