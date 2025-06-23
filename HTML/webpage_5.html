@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Background Change (CSS Only)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      height: 800px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120%;
+      /* font-family: sans-serif; */
+      /* text-shadow: 1px 1px 5px rgb(81, 255, 0); */
+    }
+
+    .bg1 {
+      background-image: url('/pexels-pixabay-326055.jpg');
+      color: yellow;
+    }
+
+    .bg2 {
+      background-image: url('/pexels-pixabay-33045.jpg');
+    }
+
+    .bg3 {
+      background-image: url('/pexels-pixabay-36762.jpg');
+    }
+
+    .bg4 {
+      background-image: url('/pexels-pixabay-45853.jpg');
+    }
+    .io1 {
+        background: rgba(189, 1, 1, 0.5);
+        padding: 30px;
+        border-radius: 0px;
+        text-align: center;
+        }
+
+  </style>
+</head>
+<body>
+
+  <section class="bg1">
+  <div class="io1">
+    <h1>Hello</h1>
+    <p>Section 1</p>
+  </div>
+</section>
+
+  <section class="bg2">Section 2</section>
+  <section class="bg3">Section 3</section>
+  <section class="bg4">Section 4</section>
+  
+
+</body>
+</html>
