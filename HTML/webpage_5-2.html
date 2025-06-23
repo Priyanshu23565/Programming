@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Background Change with DIV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .section {
+      height: 800px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .bg1 {
+      background-image: url('/pexels-pixabay-326055.jpg');
+      color: yellow;
+    }
+
+    .bg2 {
+      background-image: url('/pexels-pixabay-33045.jpg');
+    }
+
+    .bg3 {
+      background-image: url('/pexels-pixabay-36762.jpg');
+    }
+
+    .bg4 {
+      background-image: url('/pexels-pixabay-45853.jpg');
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section bg1">
+    <div class="content">
+      <h1>Hello</h1>
+      <p>This is Section 1</p>
+    </div>
+  </div>
+
+  <div class="section bg2">
+    <div class="content">
+      <h1>Mountains</h1>
+      <p>This is Section 2</p>
+    </div>
+  </div>
+
+  <div class="section bg3">
+    <div class="content">
+      <h1>Forest</h1>
+      <p>This is Section 3</p>
+    </div>
+  </div>
+
+  <div class="section bg4">
+    <div class="content">
+      <h1>Desert</h1>
+      <p>This is Section 4</p>
+    </div>
+  </div>
+
+</body>
+</html>
