@@ -1,0 +1,45 @@
+Update ->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background: #3498db;
+      position: relative;
+      animation: move 2s infinite alternate;
+    }
+     @keyframes move {
+      0% {
+        left: 0;
+        border-radius: 0;
+        background-color: #3498db;
+      }
+      30% {
+        background-color: orange;
+      }
+      50% {
+        background-color: yellow;
+      }
+      70% {
+        background-color: limegreen;
+      }
+      100% {
+        left: 400px;
+        border-radius: 50%;
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div><br/>
+  <div class="box"></div><br>
+  <div class="box"></div><br>
+  <div class="box"></div>
+
+</body>
+</html>
