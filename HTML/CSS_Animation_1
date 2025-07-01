@@ -1,0 +1,48 @@
+Rotate Animation :
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background: #3498db;
+      margin: 100px auto;
+      transition: 2s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.2) rotate(50deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>
+=========================================>>
+
+
+✅ :hover
+Jab tum mouse ko .box ke upar le jaate ho (hover karte ho), tab yeh style apply hoti hai.
+
+✅ transform:
+Ye CSS property hai jo kisi element ka size, position, rotation, skew ya 2D/3D transformation control karti hai.
+
+⚙️ Details:
+1. scale(1.2)
+Box ka size 1.2x ho jaata hai.
+
+Yaani original se 20% bada ho jaata hai.
+
+Smooth zoom effect milta hai.
+
+2. rotate(50deg)
+Box clockwise 50 degrees ghoomta hai.
+
+360° = full circle, toh 50° means thoda tilt.
+
+Ye rotate hota hai center se by default.
