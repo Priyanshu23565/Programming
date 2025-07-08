@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Background Change with DIV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+     
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .section {
+      height: 800px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; 
+      text-align: center;
+      
+    }
+
+    .bg1 {
+      background-image: url('/pexels-pixabay-326055.jpg');
+      color: yellow;
+    }
+
+    .bg2 {
+      background-image: url('/pexels-pixabay-33045.jpg');
+    }
+
+    .bg3 {
+      background-image: url('/pexels-pixabay-36762.jpg');
+    }
+
+    .bg4 {
+      background-image: url('/pexels-pixabay-45853.jpg');
+    }
+
+    .content {
+      background: rgba(237, 25, 25, 0.5);
+      padding: 50px;
+      border-radius: 50px;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+    .navbar{
+      background-color: #c4bcbc;
+     justify-content: center;
+     padding: 5px;
+     position: fixed;
+     width: 100%;
+     display: flex;
+      gap: 50px;
+     
+    }
+    .navbar a{
+      text-decoration: none;
+      
+    }
+    .navbar a:hover{
+      background-color: aqua;
+    }
+   .ko1 {
+    height:250px;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-image: url('/automobile-automotive-car-112460-removebg-preview.');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+  .ko1:hover {
+    border-radius: 50px;
+    border: 2px dotted rgb(228, 228, 228);
+    /* background-color: aqua; */
+    /* background-image: url(/pexels-pixabay-33045.jpg); */
+  
+  }
+  .cardesign{
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    border: 2px double rgb(228, 228, 228);
+  }
+  .a1{
+    width: 200px;
+   height: 200px;
+    background-color: 
+    red; 
+    margin: 70px;
+    animation: move 2s alternate infinite;
+  }
+  .a1:hover{
+    background-color: blueviolet;
+    border: 2px solid yellow;
+  }
+  @keyframes move{
+    from{
+      background-color: aqua;
+    }
+    to{
+      background-color: brown;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    
+      <a href="HTTPS">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+  
+</div>
+
+
+  <div class="section bg1">
+    
+    <div class="content">
+      
+      <h1>Hello</h1>
+      <p>This is Section 1</p>
+    </div>
+
+    <div class="cardesign">
+
+      <div class="ko1" style="background-image: url(/automobile-automotive-car-112460-removebg-preview.png);">
+       <!-- image for car -->
+      </div>
+      <div class="ko1" style="background-image: url('/155028248-removebg-preview.png');">
+       <!-- image for car -->
+      </div>
+      <div class="ko1" style="background-image: url('/Car_game_1212.png');">
+       
+      </div>
+    </div>
+      
+
+  </div>
+
+  <div class="section bg2">
+
+    
+    <div class="content">
+      <h1>Mountains</h1>
+      <p>This is Section 2</p>
+    </div>
+    <div class="a1"></div>
+  </div>
+
+  <div class="section bg3">
+    <div class="content">
+      <h1>Forest</h1>
+      <p>This is Section 3</p>
+    </div>
+  </div>
+
+  <div class="section bg4" id="Home">
+    <div class="content">
+      <h1>Desert</h1>
+      <p>This is Section 4</p>
+    </div>
+  </div>
+
+</body>
+</html>
