@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 90px;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .box {
+    display: flex;
+    width: 120px;
+    height: 50px;
+    background: #3498db;
+    color: white;
+    margin: 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .right:hover {
+    transform: translateX(40px);
+    background-color: aqua;
+  }
+  .left:hover {
+    transform: translateX(-30px);
+    background-color: blue;
+  }
+  .down:hover {
+    transform: translateY(20px);
+    background-color: yellow;
+  }
+  .up:hover {
+    transform: translateY(-15px);
+    border: 2px dotted red;
+    background-color: turquoise;
+
+  }
+</style>
+</head>
+<body>
+
+<div class="box right">Right</div>
+<div class="box left">Left</div>
+<div class="box down">Down</div>
+<div class="box up">Up</div>
+
+</body>
+</html>
