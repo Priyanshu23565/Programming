@@ -1,0 +1,44 @@
+<!-- | Pseudo-Class         | Use                                  |
+| -------------------- | ------------------------------------ |
+| `:first-child`       | Pehla child element                  |
+| `:last-child`        | Aakhri child element                 |
+| `:nth-child(n)`      | Nth number ka child (e.g., 3rd, 4th) |
+| `:nth-last-child(n)` | Last se nth number ka child          |
+| `:only-child`        | Agar ek hi child ho parent me        |
+
+
+
+| Pseudo-Class    | Use                              |
+| --------------- | -------------------------------- |
+| `:checked`      | Checkbox ya radio jab checked ho |
+| `:disabled`     | Disabled input field             |
+| `:enabled`      | Enabled input field              |
+| `:required`     | Required input field             |
+| `:optional`     | Optional input field             |
+| `:valid`        | Valid form value                 |
+| `:invalid`      | Invalid form value               |
+| `:focus-within` | Jab andar ka element focused ho  |
+
+
+
+Pseudo-classes: State ya position batate hain (:hover, :first-child)
+
+Pseudo-elements: Naye virtual parts banate hain (::before, ::after)
+
+
+ -->
+<STYle>
+
+p:only-child {
+  border: 2px solid green;
+  padding: 5px;
+}
+</STYle>
+<div>
+  <p>Single child</p>  <!-- Sirf ek hi child hai, isliye ye select hoga -->
+</div>
+
+<div>
+  <p>Child 1</p>       <!-- Parent ke paas 2 child hain, ye select nahi hoga -->
+  <p>Child 2</p>       <!-- Ye bhi select nahi hoga -->
+</div>
