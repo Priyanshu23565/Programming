@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class CoffeeMachine {
+public:
+    void makeCoffee() {
+        boilWater();
+        brewCoffee();
+        cout << "Coffee is ready!" << endl;
+    }
+
+private:
+    void boilWater() {
+        cout << "Boiling water..." << endl;
+    }
+
+    void brewCoffee() {
+        cout << "Brewing coffee..." << endl;
+    }
+};
+
+int main() {
+    CoffeeMachine cm;
+    cm.makeCoffee();
+    return 0;
+}
