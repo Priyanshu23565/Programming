@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    int age;  // Private: directly access nahi kar sakte
+
+public:
+    void setAge(int a) {
+        age = a;
+    }
+
+    int getAge() {
+        return age;
+    }
+};
+
+int main() {
+    Student s;
+    s.setAge(18);                       // Set value through function
+    cout << "Student Age: " << s.getAge(); // Get value through function
+    return 0;
+}
