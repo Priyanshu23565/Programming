@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+private:
+    int balance;  // hidden from outside
+
+public:
+    void setBalance(int amount) {
+        if (amount >= 0) {
+            balance = amount;
+        }
+    }
+
+    int getBalance() {
+        return balance;
+    }
+};
+
+int main() {
+    BankAccount acc;
+
+    acc.setBalance(1000);          // setting balance via method
+    cout << acc.getBalance();      // getting balance via method
+
+    // acc.balance = 5000; ❌ NOT ALLOWED (private member)
+    return 0;
+}
