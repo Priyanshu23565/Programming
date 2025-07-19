@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notification Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    .box {
+      /* display: inline-flex; */
+      width: 150px;
+      background-color: #ff0f0f;
+      padding: 10px 20px;
+      border-radius: 80px;
+      box-shadow: 10px 20px 5px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .box::before {
+      content: "👋 ";
+    }
+    .box:hover::before{
+      content: "😍 ";
+    }
+
+    .box::after {
+      content: " 🌟";
+    }
+    .box:hover:after {
+      content: " ❤️";
+    }
+
+    .box:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.3);
+      box-shadow: 0 4px 18px greenyellow;
+      border: 2px solid yellow;
+    }
+    
+
+    .notify {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #ffffff;
+      border: 2px solid #2196f3;
+      color: #2196f3;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .notify::after {
+      content: " (3)";
+      color: red;
+      font-weight: bold;
+    }
+
+    .notify:hover {
+      background-color: #2196f3;
+      color: #ff0707;
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-size: 38px;
+      
+    }
+    .ki1{
+      display: flex;
+      gap: 40px;
+    }
+    .ki1 .box:nth-child(2){
+      background-color: #2bff01;
+    }
+    .ki1 .box:nth-child(2):hover{
+      background-color: red;
+      text-align: center;
+    }
+    .box:nth-child(3){
+      background-color: rosybrown;
+    }
+    .box:nth-child(3):hover{
+      background-color: #01ffd9;
+    }
+    .box:nth-child(4){
+      background-color: yellow ;
+    }
+    .box:nth-child(4):hover{
+      background-color: palevioletred;
+
+    }
+    .box2{
+      width: 150px;
+      height: 150px;
+      padding: 25px;
+      background-color: #2bff01;
+      border: 2px dotted red;
+      border-radius: 7px;
+      text-align: center;
+      box-shadow: 2px 0px 5px red  ;
+    }
+    .box2::before{
+      content: "🤔";
+    }
+    .box2::after{
+      content: "🔱";
+    }
+    .box2:hover::before{
+      content: "🤩";
+    }
+    .box2:hover::after{
+      content: "😊";
+      
+    }
+    .box2:hover:nth-child(3){
+     background-color: blueviolet;
+    }
+    .box2:hover{
+      transition: 0.3s ease-in-out;
+      transform: scale(1.3);
+      border: 2px dotted yellow;
+      border-radius: 50px;
+      box-shadow: 
+      2px 3px 5px yellow,
+      2px 3px 6px red;
+       ;
+    }
+    .o9{
+      display: flex;
+      gap: 60px;
+      margin-top: 50px;
+      background-color: rgba(156, 139, 131, 0.263);
+      height: 350px;
+      border: 3px double rgba(21, 87, 255, 0.449);
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="ki1">
+    <div class="box">Hello</div>
+    <div class="box">About</div>
+    <div class="box">Contace</div> 
+    <div class="box">Click me </div>
+   </div>
+  <button class="notify">Notifications</button>
+<hr>
+
+  <div class="o9">
+          <div class="box2">
+            HELLO<br> 
+            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+          </div>
+          <div class="box2">
+            HELLO<br> 
+            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+          </div>
+          <div class="box2">
+            HELLO<br> 
+            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+          </div>
+    </div>
+
+</body>
+</html>
