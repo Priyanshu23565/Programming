@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notification Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    .box {
+      /* display: inline-flex; */
+      width: 150px;
+      background-color: #ff0f0f;
+      padding: 10px 20px;
+      border-radius: 80px;
+      box-shadow: 10px 20px 5px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .box::before {
+      content: "👋 ";
+    }
+    .box:hover::before{
+      content: "😍 ";
+    }
+
+    .box::after {
+      content: " 🌟";
+    }
+    .box:hover:after {
+      content: " ❤️";
+    }
+
+    .box:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.3);
+      box-shadow: 0 4px 18px greenyellow;
+      border: 2px solid yellow;
+    }
+    
+
+    .notify {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #ffffff;
+      border: 2px solid #2196f3;
+      color: #2196f3;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .notify::after {
+      content: " (3)";
+      color: red;
+      font-weight: bold;
+    }
+
+    .notify:hover {
+      background-color: #2196f3;
+      color: #ff0707;
+      transform: scale(1.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-size: 26px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Hello</div> <br>
+  <button class="notify">Notifications</button>
+</body>
+</html>
