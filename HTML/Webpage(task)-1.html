@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Pure HTML Website</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My HTML Website</h1>
+    <p>This website is built using only HTML tags — no CSS or JavaScript!</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <p>
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#gallery">Gallery</a> |
+      <a href="#contact">Contact</a> |
+      <a href="#register">Register</a>
+    </p>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Home</h2>
+    <p>This is the home section of the website. Everything is plain HTML!</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <article>
+      <p>We are a group of HTML enthusiasts creating websites using only HTML tags.</p>
+      <p>Our mission is to help beginners understand how HTML works at its core.</p>
+    </article>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Website Development (HTML only)</li>
+      <li>HTML Tutorials</li>
+      <li>Beginner Projects</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Some images displayed below using the <code>&lt;img&gt;</code> tag:</p>
+    <img src="https://via.placeholder.com/150" alt="Sample Image 1">
+    <img src="https://via.placeholder.com/150" alt="Sample Image 2">
+    <img src="https://via.placeholder.com/150" alt="Sample Image 3">
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="/contact-submit" method="post">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register">
+    <h2>Registration Form</h2>
+    <form action="/register" method="post">
+      <label for="regname">Full Name:</label><br>
+      <input type="text" id="regname" name="regname" required><br><br>
+
+      <label for="regemail">Email:</label><br>
+      <input type="email" id="regemail" name="regemail" required><br><br>
+
+      <label for="regpass">Password:</label><br>
+      <input type="password" id="regpass" name="regpass" required><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <input type="radio" name="gender" value="Male"> Male<br>
+      <input type="radio" name="gender" value="Female"> Female<br>
+      <input type="radio" name="gender" value="Other"> Other<br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <hr>
+    <p>&copy; 2025 My HTML Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
