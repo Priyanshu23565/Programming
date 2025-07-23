@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All-in-One HTML-Only Webpage</title>
+</head>
+
+<!-- BODY START -->
+<body bgcolor="#f5f5f5" text="black">
+
+  <!-- MOVEMENT / MARQUEE -->
+  <marquee bgcolor="#d1e0e0" behavior="alternate" direction="left" scrollamount="10">
+    <font size="5" color="darkblue"><b>🔥 Welcome to the Ultimate HTML-Only Webpage 🔥</b></font>
+  </marquee>
+
+  <!-- HEADER -->
+  <header>
+    <h1 align="center"><font color="maroon">My Cool HTML Website</font></h1>
+    <p align="center"><font color="gray">Using almost every HTML tag without CSS or JavaScript!</font></p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <table bgcolor="lightblue" border="1" width="100%">
+      <tr align="center">
+        <td><a href="#home">Home</a></td>
+        <td><a href="#about">About</a></td>
+        <td><a href="#content">Content</a></td>
+        <td><a href="#media">Media</a></td>
+        <td><a href="#form">Form</a></td>
+        <td><a href="#footer">Footer</a></td>
+      </tr>
+    </table>
+  </nav>
+
+  <hr color="blue">
+
+  <!-- MAIN PAGE STRUCTURE -->
+  <table width="100%" border="1">
+    <tr>
+      <!-- SIDEBAR -->
+      <td width="20%" bgcolor="#e6e6e6" valign="top">
+        <h3>Sidebar</h3>
+        <ul>
+          <li>HTML Basics</li>
+          <li>Tags</li>
+          <li>Forms</li>
+          <li>Media</li>
+        </ul>
+      </td>
+
+      <!-- MAIN CONTENT -->
+      <td width="80%" bgcolor="#ffffff" valign="top">
+
+        <!-- HOME SECTION -->
+        <section id="home">
+          <h2>🏠 Home</h2>
+          <p>Welcome to the HTML-only project site! This is where we explore the power of raw HTML.</p>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+          <h2>📘 About</h2>
+          <article>
+            <p>This page includes <b>text formatting</b>, <i>paragraphs</i>, <u>underlining</u>, and more.</p>
+            <blockquote>This is a blockquote example. HTML lets you do simple text features easily.</blockquote>
+            <abbr title="HyperText Markup Language">HTML</abbr> is awesome!
+          </article>
+        </section>
+
+        <!-- CONTENT / TABLES / LISTS -->
+        <section id="content">
+          <h2>📋 Content</h2>
+
+          <h3>📌 Ordered List</h3>
+          <ol>
+            <li>Introduction</li>
+            <li>Body</li>
+            <li>Conclusion</li>
+          </ol>
+
+          <h3>📌 Unordered List</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS (Not used here)</li>
+            <li>JavaScript (Also not used)</li>
+          </ul>
+
+          <h3>📌 Definition List</h3>
+          <dl>
+            <dt>HTML</dt>
+            <dd>- A markup language for web pages.</dd>
+            <dt>Tag</dt>
+            <dd>- Instruction in HTML.</dd>
+          </dl>
+
+          <h3>📌 Table Example</h3>
+          <table border="1">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Aman</td>
+              <td>21</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <td>Sarah</td>
+              <td>25</td>
+              <td>USA</td>
+            </tr>
+          </table>
+
+          <h3>⭕ Circle using table (approximation)</h3>
+          <pre>
+      ***
+    *     *
+    *     *
+      ***
+          </pre>
+
+        </section>
+
+        <!-- MEDIA -->
+        <section id="media">
+          <h2>🎬 Media</h2>
+
+          <h3>🖼️ Image</h3>
+          <img src="https://via.placeholder.com/150" alt="Sample Image"><br><br>
+
+          <h3>🔊 Audio</h3>
+          <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio><br><br>
+
+          <h3>📺 Video</h3>
+          <video width="300" height="200" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video><br><br>
+        </section>
+
+        <!-- FORM SECTION -->
+        <section id="form">
+          <h2>📝 Contact Form</h2>
+          <form action="/submit" method="post">
+            <label>Name:</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female<br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="4" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+          </form>
+        </section>
+
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <hr color="gray">
+    <center>
+      <p><font color="gray">&copy; 2025 Pure HTML Webpage | Created by ChatGPT & You 💻</font></p>
+    </center>
+  </footer>
+
+</body>
+</html>
