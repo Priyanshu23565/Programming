@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using confirm()</h2>
+<button onclick="askUser()">Ask Confirmation</button>
+
+<script>
+  function askUser() {
+    const result = confirm("Do you want to continue?");
+    if (result) {
+      alert("User clicked OK");
+    } else {
+      alert("User clicked Cancel");
+    }
+  }
+</script>
+
+</body>
+</html>
