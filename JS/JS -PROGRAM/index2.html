@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main Page</title>
+</head>
+<body>
+
+  <button onclick="openHelloWorld()">Open Hello World</button>
+
+  <script>
+    function openHelloWorld() {
+      const he = window.open('', '', 'width=40,height=300');
+
+      he.document.write(`
+        <html>
+          <head>
+            <title>Hello</title>
+            
+          </head>
+          <body>
+            <h1 style="color: red;">HELLO WORLD</h1>
+
+          </body>
+        </html>
+      `);
+    }
+  </script>
+
+</body>
+</html>
