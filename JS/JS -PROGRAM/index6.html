@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Example</title>
+</head>
+<body>
+
+  <button onclick="askName()">Click Me</button>
+
+  <script>
+    function askName() {
+      let name = prompt("Enter your name:");
+      if (name != 0) {
+        alert("Hello " + name + "!");
+      } else {
+        alert("You cancelled the prompt.");
+      }
+    }
+  </script>
+
+</body>
+</html>
