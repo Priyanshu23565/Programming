@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📘 Chapter 11 – 2D Transforms in CSS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #00bcd4;
+    }
+
+    .note {
+      background: #e1f5fe;
+      padding: 10px 15px;
+      border-left: 4px solid #0288d1;
+      margin-bottom: 10px;
+    }
+
+    .code {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      font-family: monospace;
+      font-size: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin-bottom: 10px;
+    }
+
+    .output {
+      padding: 20px;
+      margin-bottom: 30px;
+      background: white;
+      border: 1px solid #ddd;
+      width: fit-content;
+    }
+
+    .hover-box {
+      width: 100px;
+      height: 100px;
+      background: tomato;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+    }
+
+    .hover-box:hover {
+      transform: rotate(15deg) scale(1.2);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px dashed #ccc;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Chapter 11 – 2D Transforms in CSS</h1>
+
+  <!-- 🔀 1. Translate -->
+  <h2>🔀 Translate – Move Karna</h2>
+  <div class="note">
+    <strong>transform: translate(x, y)</strong> element ko X (horizontal) aur Y (vertical) direction me move karta hai.<br>
+    🧠 Positive → right/bottom, Negative → left/top
+  </div>
+
+  <div class="code">
+    &lt;div style="transform: translate(50px, 20px);"&gt;<br>
+    &nbsp;&nbsp;👉 Yeh box 50px right aur 20px niche gaya<br>
+    &lt;/div&gt;
+  </div>
+
+  <div class="output" style="transform: translate(50px, 20px);">
+    👉 Yeh box 50px right aur 20px niche gaya
+  </div>
+
+  <hr>
+
+  <!-- 🔄 2. Rotate -->
+  <h2>🔄 Rotate – Ghumao</h2>
+  <div class="note">
+    <strong>transform: rotate(deg)</strong> element ko angle ke hisaab se ghumata hai.<br>
+    🧠 Positive = clockwise, Negative = anti-clockwise
+  </div>
+
+  <div class="code">
+    &lt;div style="transform: rotate(45deg);"&gt;<br>
+    &nbsp;&nbsp;🔄 Yeh box 45° ghoom gaya<br>
+    &lt;/div&gt;
+  </div>
+
+  <div class="output" style="transform: rotate(45deg);">
+    🔄 Yeh box 45° ghoom gaya
+  </div>
+
+  <hr>
+
+  <!-- 🔍 3. Scale -->
+  <h2>🔍 Scale – Zoom In/Out</h2>
+  <div class="note">
+    <strong>transform: scale(x)</strong> size ko zoom in ya zoom out karta hai.<br>
+    🧠 scale(2) = 2x bada, scale(0.5) = aadha
+  </div>
+
+  <div class="code">
+    &lt;div style="transform: scale(1.5);"&gt;<br>
+    &nbsp;&nbsp;🔍 1.5x Bada ho gaya<br>
+    &lt;/div&gt;
+  </div>
+
+  <div class="output" style="transform: scale(1.5);">
+    🔍 1.5x Bada ho gaya
+  </div>
+
+  <hr>
+
+  <!-- 💫 4. Skew -->
+  <h2>💫 Skew – Tilt Karna</h2>
+  <div class="note">
+    <strong>transform: skew(x, y)</strong> element ko X aur Y axis par tilt karta hai.<br>
+    🧠 Jitna angle doge, utna jhukega
+  </div>
+
+  <div class="code">
+    &lt;div style="transform: skew(20deg, 10deg);"&gt;<br>
+    &nbsp;&nbsp;💫 Yeh box tilt ho gaya X aur Y dono axis me<br>
+    &lt;/div&gt;
+  </div>
+
+  <div class="output" style="transform: skew(20deg, 10deg);">
+    💫 Yeh box tilt ho gaya X aur Y dono axis me
+  </div>
+
+  <hr>
+
+  <!-- 🔬 5. Matrix -->
+  <h2>🔬 Matrix – All in One</h2>
+  <div class="note">
+    <strong>transform: matrix(a, b, c, d, e, f)</strong> — sab transforms ek hi line me apply karta hai.<br>
+    ⚙️ a=scaleX, b=skewY, c=skewX, d=scaleY, e=translateX, f=translateY
+  </div>
+
+  <div class="code">
+    &lt;div style="transform: matrix(1, 0.3, 0.2, 1, 40, 20);"&gt;<br>
+    &nbsp;&nbsp;🔧 Matrix transform laga hai<br>
+    &lt;/div&gt;
+  </div>
+
+  <div class="output" style="transform: matrix(1, 0.3, 0.2, 1, 40, 20);">
+    🔧 Matrix transform laga hai
+  </div>
+
+  <hr>
+
+  <!-- 🖼️ Hover Effect -->
+  <h2>🖼️ Hover Effect – Ghoomo + Zoom</h2>
+  <div class="note">
+    Hover karne par element ghoomega bhi aur bada bhi hoga.<br>
+    💡 Use <code>transition:</code> for smooth animation
+  </div>
+
+  <div class="code">
+    &lt;div class="hover-box"&gt;🌀&lt;/div&gt;<br><br>
+    .hover-box &#123;<br>
+    &nbsp;&nbsp;width: 100px;<br>
+    &nbsp;&nbsp;height: 100px;<br>
+    &nbsp;&nbsp;background: tomato;<br>
+    &nbsp;&nbsp;transition: 0.3s;<br>
+    &#125;<br><br>
+    .hover-box:hover &#123;<br>
+    &nbsp;&nbsp;transform: rotate(15deg) scale(1.2);<br>
+    &#125;
+  </div>
+
+  <div class="output">
+    <div class="hover-box">🌀</div>
+  </div>
+
+  <hr>
+
+</body>
+</html>
