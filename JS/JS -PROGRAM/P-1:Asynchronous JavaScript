@@ -1,0 +1,21 @@
+function boilWater() {
+  setTimeout(() => {
+    console.log("1. Paani garam ho gaya 🔥");
+  }, 2000); // 2 second ka wait
+}
+
+function addTeaLeaves() {
+  console.log("2. Chai patti daali 🍃");
+}
+function addMilk() {
+  console.log("3. Doodh daala 🥛");
+}
+
+function serveTea() {
+  console.log("4. Chai serve kar di ☕");
+}
+//---------------->  // Asynchronous execution  <--------
+boilWater();      // Ye background me chalu ho gaya
+addTeaLeaves();   // Ye turant chala
+addMilk();        // Ye bhi turant chala
+serveTea();       // Ye bhi turant chala
