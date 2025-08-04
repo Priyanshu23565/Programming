@@ -1,0 +1,35 @@
+function doHomework(subject, callback) {
+  console.log(`Homework start kar raha hoon: ${subject}`);
+
+  setTimeout(() => {
+    console.log(`Homework complete kar diya: ${subject}`);
+    callback();  // Jab homework complete ho jaye, ye chalega
+  }, 2000);
+}
+
+function takeBreak() {
+  console.log("Chalo break lete hain ☕");
+}
+
+// Function ko call karo aur callback pass karo
+doHomework("Maths", takeBreak);
+---------------------------------------------
+Example -2  --------------------------------------------->>> 
+
+function orderFood(food, callback) {
+  console.log(`Order diya: ${food}`);
+
+  setTimeout(() => {
+    console.log(`${food} ready ho gaya! 🍽️`);
+    callback();
+  }, 3000);
+}
+
+function eatFood() {
+  console.log("Ab khana khaate hain 😋");
+}
+
+// Order karo aur callback pass karo
+orderFood("Pizza", eatFood);
+
+
