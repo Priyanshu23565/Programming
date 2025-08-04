@@ -1,0 +1,18 @@
+function boilWater() {
+  console.log("1. Paani garam kar raha hoon 🔥");
+}
+function addTeaLeaves() {
+  console.log("2. Chai patti daali 🍃");
+}
+function addMilk() {
+  console.log("3. Doodh daala 🥛");
+}
+function serveTea() {
+  console.log("4. Chai ready, serve kar di ☕");
+}
+
+// Line-by-line kaam ho raha hai (Synchronous)
+boilWater();
+addTeaLeaves();
+addMilk();
+serveTea();
