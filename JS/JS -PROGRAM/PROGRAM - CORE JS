@@ -1,0 +1,113 @@
+**simple aur basic JavaScript ke programs** 
+
+---
+
+## ✅ **1. Add Two Numbers**
+
+```javascript
+let a = 10;
+let b = 20;
+let sum = a + b;
+
+console.log("Sum is:", sum);
+```
+
+📤 **Output:**
+
+```
+Sum is: 30
+```
+
+---
+
+## ✅ **2. Check Even or Odd**
+
+```javascript
+let num = 7;
+
+if (num % 2 === 0) {
+    console.log("Even Number");
+} else {
+    console.log("Odd Number");
+}
+```
+
+📤 **Output:**
+
+```
+Odd Number
+```
+
+---
+
+## ✅ **3. Greet with Name (Function use)**
+
+```javascript
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("Amit");
+```
+
+📤 **Output:**
+
+```
+Hello, Amit!
+```
+
+---
+
+## ✅ **4. Print 1 to 5 using loop**
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+📤 **Output:**
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+## ✅ **5. Simple Calculator using switch**
+
+```javascript
+let a = 10;
+let b = 5;
+let op = "+"; // change to -, *, /
+
+switch(op) {
+    case "+":
+        console.log(a + b);
+        break;
+    case "-":
+        console.log(a - b);
+        break;
+    case "*":
+        console.log(a * b);
+        break;
+    case "/":
+        console.log(a / b);
+        break;
+    default:
+        console.log("Invalid Operator");
+}
+```
+
+📤 **Output (if op = "+"):**
+
+```
+15
+```
+
+---
+chahiye to bol: "Bhai aur simple programs de" 🔥**
