@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .lp{
+        margin-top: 150px;
+        margin-left: 150px;
+        height: 60px;
+        width: 60px;
+        background-color: aqua;
+        animation: ho 12s infinite;
+    }
+    @keyframes ho{
+        10%{
+            background-color: violet;
+        }
+        50%{
+            transform: rotate(-90deg) scale(2.3);
+            box-shadow: 2px -12px 12px red;
+            border: 2px dotted rgb(179, 255, 0);
+        }
+        70%{
+            background-color: rgb(223, 201, 197);
+            transform: rotate(90deg) scale(3.3);
+            box-shadow: 2px 12px 12px red;
+        }
+    }
+    .lp:hover{
+        background-color: yellow;
+    }
+
+</style>
+<body>
+    <div class="lp">
+    </div>
+</body>
+</html>

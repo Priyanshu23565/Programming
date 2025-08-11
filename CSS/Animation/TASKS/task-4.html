@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .lp{
+        margin-top: 150px;
+        margin-left: 150px;
+        height: 60px;
+        width: 60px;
+        background-image: url('/pexels-ardit-mbrati-216809103-16439403.jpg');
+        background-position: center;
+        background-size: cover;
+        animation: ho 6s infinite;
+    }
+    @keyframes ho{
+        10%{
+            background-color: violet;
+        }
+        50%{
+            background-color: tomato;
+            transform: rotate(-90deg) scale(2.3);
+            box-shadow: 2px -12px 12px red;
+            border: 2px dotted rgb(179, 255, 0);
+        }
+        70%{
+            background-color: yellow;
+            transform: rotate(90deg) scale(3.3);
+            box-shadow: 2px 12px 12px blue,
+            20px 2px 80px rgb(255, 210, 8);
+        }
+        80%{
+            background-color: aquamarine;
+            transform: rotate(90deg) scale(3.3);
+            box-shadow: 2px 12px 12px blue,
+            20px 2px 80px rgb(255, 210, 8);
+        }
+    }
+    .contr{
+        display: flex;
+    }
+
+</style>
+<body>
+    <div class="contr">
+            <div class="lp"></div>
+            <div class="lp"></div>
+        </div>
+    <div class="contr">
+            <div class="lp"></div>
+            <div class="lp"></div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .lp{
+        margin-top: 150px;
+        margin-left: 150px;
+        height: 60px;
+        width: 60px;
+        background-image: url('/pexels-ardit-mbrati-216809103-16439403.jpg');
+        background-position: center;
+        background-size: cover;
+        animation: ho 36s infinite;
+    }
+    @keyframes ho{
+        10%{
+            background-color: violet;
+        }
+        50%{
+            transform: rotate(-90deg) scale(2.3);
+            box-shadow: 2px -12px 12px red;
+            background-image: url('/pexels-egeardaphotos-2148533277-33383593.jpg');
+            border: 2px dotted rgb(179, 255, 0);
+        }
+        70%{
+            background-image: url('/pexels-cesarperez209-733745.jpg');
+            transform: rotate(90deg) scale(3.3);
+            box-shadow: 2px 12px 12px blue,
+            20px 2px 80px rgb(255, 210, 8);
+        }
+    }
+    /* .lp:hover{
+        background-color: yellow;
+    } */
+
+</style>
+<body>
+    <div class="lp">
+    
+    </div>
+</body>
+</html>

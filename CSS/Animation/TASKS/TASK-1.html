@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content{
+        display: flex;
+    }
+    #ko1{
+        margin-top: 150px;
+        margin-left: 50px;
+     
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+        animation: move 4s infinite;
+    }
+    @keyframes move{
+        from {
+            border-radius: 50px;
+            /* background-color: black; */
+            border: 2px solid red;
+        }
+        to{
+            border-radius: 50px;
+            border: 2px dotted red;
+             transform: rotate(360deg) scale(3.2);
+            /* transform: scale(3.2); */
+            background-color: yellow;
+        }
+    }
+    #ko1:hover{
+        background-color: rgb(21, 123, 240);
+    }
+    #ko1:nth-child(2){
+        background-color: rgb(75, 12, 248);
+    }
+    #ko1:nth-child(3){
+        background-color: rgb(6, 219, 88);
+    }
+
+</style>
+<body>
+    <div class="content">
+
+          <div id="ko1"></div>
+          <div id="ko1"></div>
+          <div id="ko1"></div>
+        <div></div>
+    </div>
+    <!-- <div></div> -->
+    
+</body>
+</script>
+</html>
