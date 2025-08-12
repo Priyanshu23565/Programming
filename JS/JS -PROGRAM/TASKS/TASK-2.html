@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label >First No.</label>
+    <input type="number" id="hy1" ><br><br>
+    <label >Sec No.</label>
+    <input type="number" id="hy2"><br><br>
+    <button onclick="add()">Click me </button>
+</body>
+<script>
+    function check(params){
+        if(params%2==0){
+            console.log("even");
+        }
+        else{
+            console.log("Odd");
+        } 
+    }
+    function add(){
+        let s1=0;
+        let a1=document.getElementById('hy1').value;
+        let a2=document.getElementById('hy2').value;
+        let s=Number(a1)+Number(a2);
+        console.log("addition "+s);
+        for (let index = 1; index <=10; index++) {
+            
+            
+            if((index*s)%2==0){
+                console.log(index*s);  
+                s1=s1+index*s
+            }
+        }
+        console.log(s1);
+        check(s1);
+    }
+</script>
+</html>
