@@ -1,0 +1,40 @@
+<style>
+  #code {
+    margin: 80px;
+    height: 200px;
+    width: 500px;
+    display: flex;
+
+    background-color: blue;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    transition: 0.5s;
+  }
+
+  .red { background-color: red; }
+  .green { background-color: green; }
+  .yellow { background-color: yellow; }
+
+  .red:hover,
+  .yellow:hover,
+  .green:hover {
+    border-radius: 50%;
+    border: 2px dotted rgb(48, 16, 228);
+    transform: scale(1.2);
+  }
+
+  .green:hover {
+    box-shadow: 5px 5px 20px red, -5px -10px 5px yellow;
+  }
+</style>
+
+<body>
+  <div id="code">
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box yellow"></div>
+  </div>
+</body>
