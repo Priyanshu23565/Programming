@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple API Example</title>
+</head>
+<body>
+
+<h1>Random Joke from API</h1>
+<button onclick="getJoke()">Get Joke</button>
+
+<p id="joke"></p>
+
+<script>
+  function getJoke() {
+    fetch('https://official-joke-api.appspot.com/random_joke')
+      .then(response => response.json())
+      .then(data => {
+       
+        document.getElementById('joke').innerText = `${data.setup} `;
+      })
+      .catch(error => {
+        document.getElementById('joke').innerText = "Error fetching joke.";
+        
+      });
+  }
+</script>
+
+</body>
+</html>
