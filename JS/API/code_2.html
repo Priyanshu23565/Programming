@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple API Example</title>
+</head>
+<body>
+
+<h1>Wikipedia Data Fetch </h1>
+<button onclick="getJoke()">Click </button>
+<p id="joke"></p>
+
+<script>
+  function getJoke() {
+      
+      
+    fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Salman_Khan')
+
+      .then(response => response.json())
+      .then(data => {
+       
+          document.getElementById('joke').innerText = data.extract;
+        })
+      .catch(error => {
+          document.getElementById('joke').innerText = "Error fetching joke.";
+          
+        });
+    }
+</script>
+
+</body>
+</html>
+
