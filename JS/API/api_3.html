@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+     <p id="re"></p>
+</body>
+<script>
+    fetch("https://api.agify.io?name=radha")
+    .then(a=>a.json())
+    .then(res => {
+        document.getElementById('re').innerText=`name is ${res.name} 
+        age ${res.age} counting ${res.count}`;
+        
+    });
+
+</script>
+</html>
