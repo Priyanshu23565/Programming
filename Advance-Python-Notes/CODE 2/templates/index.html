@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #op1{
+        margin: 80px;
+        height: 20px;
+        width: 50px;
+        background-color: aqua;
+        border-radius: 9px;
+        border: 2px dotted royalblue;
+    }
+    #op1:hover{
+        border: 2px dotted red;
+        background-color: violet;
+        transition: 2.5s;
+        transform: rotate(360deg) scale(2.3);
+    }
+</style>
+
+<body>
+    <p id="op1"> welcome to flask 😉</p>
+    <p id="data"></p>
+    <input type="text" id="l1">
+    <input type="button" value="click me" onclick="clickme2()" >
+    <br><br>
+
+    <!-- <input type="button" onclick="window.location.href='/music.html'"> -->
+    <button>
+        <a onclick="window.location.href='/music.html'">CLICKE ME </a>
+    </button>
+  
+</body>
+<script>
+    let y;
+    function clickme2(){
+        y=document.getElementById('l1').value;
+            document.getElementById('data').innerText=`HELLO ${y}`;
+    }
+    
+
+</script>
+</html>
