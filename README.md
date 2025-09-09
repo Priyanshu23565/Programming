@@ -66,12 +66,14 @@ A complete developer-friendly repository to master **programming fundamentals**,
 
 ## 💼 Projects & Challenges
 
-| Project Name              | Tech Stack        | Description                        |
-|---------------------------|-------------------|------------------------------------|
-| ✅ **To-Do App**          | HTML, CSS, JS     | LocalStorage-based task manager    |
-| 📚 **Library System**     | Java, MySQL       | Console-based database app         |
-| ⏳ **Quiz App** *(Planned)*| React, JS         | MCQ quiz with scoring system       |
-| 🛒 **E-commerce UI** *(Future)* | HTML, CSS, JS | Responsive static UI               |
+| Project Name                    | Tech Stack               | Description                                     |
+| ------------------------------- | ------------------------ | ----------------------------------------------- |
+| ✅ **To-Do App**                 | HTML, CSS, JS            | LocalStorage-based task manager                 |
+| 📚 **Library System**           | Java, MySQL              | Console-based CRUD database application         |
+| 🔊 **Flask Music Player** ⭐     | Python (Flask), HTML, JS | Dynamic web music player using JSON & audio API |
+| ⏳ **Quiz App** *(Planned)*      | React, JS                | MCQ quiz with scoring and timer system          |
+| 🛒 **E-commerce UI** *(Future)* | HTML, CSS, JS            | Responsive product showcase static UI           |
+
 
 > 🔥 New projects added regularly!
 
@@ -79,7 +81,6 @@ A complete developer-friendly repository to master **programming fundamentals**,
 
 ## 📂 Folder Structure Preview
 
-```bash
 📦 Zero-to-Hero/
 ├── ⚙️ C-Language/
 ├── 🧠 C++/
@@ -92,3 +93,9 @@ A complete developer-friendly repository to master **programming fundamentals**,
 ├── 🐬 MySQL/
 ├── 📄 Notes/
 └── 🧪 Projects/
+    ├── ✅ To-Do-App/
+    ├── 📚 Library-System/
+    ├── 🔊 Flask-Music-Player/
+    ├── ⏳ Quiz-App/ *(Planned)*
+    └── 🛒 E-commerce-UI/ *(Future)*
+
